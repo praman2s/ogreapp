@@ -11,3 +11,6 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 find_package(OGRE REQUIRED)
 include_directories(${OGRE_INCLUDE_DIRS}) 
 link_directories(${OGRE_LIBRARY_DIRS})
+
+add_executable(ogreapp src/ogreapp.cpp)
+link_libraries(ogreapp SDL SDL_image)
